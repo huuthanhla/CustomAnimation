@@ -12,6 +12,11 @@
 		1342972921AFECEF0050F94A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1342972721AFECEF0050F94A /* Main.storyboard */; };
 		1342972B21AFECF10050F94A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1342972A21AFECF10050F94A /* Assets.xcassets */; };
 		1342972E21AFECF10050F94A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1342972C21AFECF10050F94A /* LaunchScreen.storyboard */; };
+		1342973721AFEE490050F94A /* NVActivityIndicatorView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1342973621AFEE490050F94A /* NVActivityIndicatorView.framework */; };
+		1342974021AFF1000050F94A /* CustomAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1342973C21AFF1000050F94A /* CustomAnimation.swift */; };
+		1342974121AFF1000050F94A /* AnimationEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1342973D21AFF1000050F94A /* AnimationEnum.swift */; };
+		1342974221AFF1000050F94A /* AnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1342973E21AFF1000050F94A /* AnimationView.swift */; };
+		1342974321AFF1000050F94A /* AnimationBallScaleRippleMultiple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1342973F21AFF1000050F94A /* AnimationBallScaleRippleMultiple.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		1342972A21AFECF10050F94A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1342972D21AFECF10050F94A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1342972F21AFECF10050F94A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1342973621AFEE490050F94A /* NVActivityIndicatorView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NVActivityIndicatorView.framework; path = Carthage/Build/iOS/NVActivityIndicatorView.framework; sourceTree = "<group>"; };
+		1342973C21AFF1000050F94A /* CustomAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAnimation.swift; sourceTree = "<group>"; };
+		1342973D21AFF1000050F94A /* AnimationEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationEnum.swift; sourceTree = "<group>"; };
+		1342973E21AFF1000050F94A /* AnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationView.swift; sourceTree = "<group>"; };
+		1342973F21AFF1000050F94A /* AnimationBallScaleRippleMultiple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationBallScaleRippleMultiple.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1342973721AFEE490050F94A /* NVActivityIndicatorView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +51,7 @@
 			children = (
 				1342972221AFECEF0050F94A /* ActivityIndicator */,
 				1342972121AFECEF0050F94A /* Products */,
+				1342973521AFEE490050F94A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +68,32 @@
 			children = (
 				1342972321AFECEF0050F94A /* AppDelegate.swift */,
 				1342972521AFECEF0050F94A /* ViewController.swift */,
+				1342973B21AFF1000050F94A /* CustomAnimation */,
 				1342972721AFECEF0050F94A /* Main.storyboard */,
 				1342972A21AFECF10050F94A /* Assets.xcassets */,
 				1342972C21AFECF10050F94A /* LaunchScreen.storyboard */,
 				1342972F21AFECF10050F94A /* Info.plist */,
 			);
 			path = ActivityIndicator;
+			sourceTree = "<group>";
+		};
+		1342973521AFEE490050F94A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1342973621AFEE490050F94A /* NVActivityIndicatorView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1342973B21AFF1000050F94A /* CustomAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				1342973C21AFF1000050F94A /* CustomAnimation.swift */,
+				1342973D21AFF1000050F94A /* AnimationEnum.swift */,
+				1342973E21AFF1000050F94A /* AnimationView.swift */,
+				1342973F21AFF1000050F94A /* AnimationBallScaleRippleMultiple.swift */,
+			);
+			path = CustomAnimation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +106,7 @@
 				1342971C21AFECEF0050F94A /* Sources */,
 				1342971D21AFECEF0050F94A /* Frameworks */,
 				1342971E21AFECEF0050F94A /* Resources */,
+				1342973821AFEE4F0050F94A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -130,13 +163,38 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1342973821AFEE4F0050F94A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/NVActivityIndicatorView.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1342971C21AFECEF0050F94A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1342972621AFECEF0050F94A /* ViewController.swift in Sources */,
+				1342974221AFF1000050F94A /* AnimationView.swift in Sources */,
+				1342974321AFF1000050F94A /* AnimationBallScaleRippleMultiple.swift in Sources */,
 				1342972421AFECEF0050F94A /* AppDelegate.swift in Sources */,
+				1342974021AFF1000050F94A /* CustomAnimation.swift in Sources */,
+				1342974121AFF1000050F94A /* AnimationEnum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +342,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DAB2NZFLN5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ActivityIndicator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +365,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DAB2NZFLN5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ActivityIndicator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

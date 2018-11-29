@@ -7,14 +7,17 @@
 //
 
 import UIKit
+import NVActivityIndicatorView
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var animationView: AnimationView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        animationView.animationType = .ballScallRippleMultiple
+        animationView.startAnimating()
     }
-
 
 }
 
