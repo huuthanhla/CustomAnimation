@@ -13,10 +13,14 @@
 		1342972B21AFECF10050F94A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1342972A21AFECF10050F94A /* Assets.xcassets */; };
 		1342972E21AFECF10050F94A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1342972C21AFECF10050F94A /* LaunchScreen.storyboard */; };
 		1342973721AFEE490050F94A /* NVActivityIndicatorView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1342973621AFEE490050F94A /* NVActivityIndicatorView.framework */; };
-		1342974021AFF1000050F94A /* CustomAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1342973C21AFF1000050F94A /* CustomAnimation.swift */; };
+		1342974021AFF1000050F94A /* ActivityIndicatorShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1342973C21AFF1000050F94A /* ActivityIndicatorShape.swift */; };
 		1342974121AFF1000050F94A /* AnimationEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1342973D21AFF1000050F94A /* AnimationEnum.swift */; };
 		1342974221AFF1000050F94A /* AnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1342973E21AFF1000050F94A /* AnimationView.swift */; };
 		1342974321AFF1000050F94A /* AnimationBallScaleRippleMultiple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1342973F21AFF1000050F94A /* AnimationBallScaleRippleMultiple.swift */; };
+		13854B5C21AFF93500897DC8 /* ActivityIndicatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13854B5B21AFF93500897DC8 /* ActivityIndicatorType.swift */; };
+		13854B5E21AFF95700897DC8 /* ActivityIndicatorAnimatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13854B5D21AFF95700897DC8 /* ActivityIndicatorAnimatable.swift */; };
+		13854B6021AFF97D00897DC8 /* ActivityIndicatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13854B5F21AFF97D00897DC8 /* ActivityIndicatorFactory.swift */; };
+		13854B6221AFF9C700897DC8 /* TimingFunctionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13854B6121AFF9C700897DC8 /* TimingFunctionType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,10 +32,14 @@
 		1342972D21AFECF10050F94A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1342972F21AFECF10050F94A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1342973621AFEE490050F94A /* NVActivityIndicatorView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NVActivityIndicatorView.framework; path = Carthage/Build/iOS/NVActivityIndicatorView.framework; sourceTree = "<group>"; };
-		1342973C21AFF1000050F94A /* CustomAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAnimation.swift; sourceTree = "<group>"; };
+		1342973C21AFF1000050F94A /* ActivityIndicatorShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorShape.swift; sourceTree = "<group>"; };
 		1342973D21AFF1000050F94A /* AnimationEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationEnum.swift; sourceTree = "<group>"; };
 		1342973E21AFF1000050F94A /* AnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationView.swift; sourceTree = "<group>"; };
 		1342973F21AFF1000050F94A /* AnimationBallScaleRippleMultiple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationBallScaleRippleMultiple.swift; sourceTree = "<group>"; };
+		13854B5B21AFF93500897DC8 /* ActivityIndicatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorType.swift; sourceTree = "<group>"; };
+		13854B5D21AFF95700897DC8 /* ActivityIndicatorAnimatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorAnimatable.swift; sourceTree = "<group>"; };
+		13854B5F21AFF97D00897DC8 /* ActivityIndicatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorFactory.swift; sourceTree = "<group>"; };
+		13854B6121AFF9C700897DC8 /* TimingFunctionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimingFunctionType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,8 +96,12 @@
 		1342973B21AFF1000050F94A /* CustomAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				1342973C21AFF1000050F94A /* CustomAnimation.swift */,
+				1342973C21AFF1000050F94A /* ActivityIndicatorShape.swift */,
 				1342973D21AFF1000050F94A /* AnimationEnum.swift */,
+				13854B5B21AFF93500897DC8 /* ActivityIndicatorType.swift */,
+				13854B5D21AFF95700897DC8 /* ActivityIndicatorAnimatable.swift */,
+				13854B5F21AFF97D00897DC8 /* ActivityIndicatorFactory.swift */,
+				13854B6121AFF9C700897DC8 /* TimingFunctionType.swift */,
 				1342973E21AFF1000050F94A /* AnimationView.swift */,
 				1342973F21AFF1000050F94A /* AnimationBallScaleRippleMultiple.swift */,
 			);
@@ -192,9 +204,13 @@
 				1342972621AFECEF0050F94A /* ViewController.swift in Sources */,
 				1342974221AFF1000050F94A /* AnimationView.swift in Sources */,
 				1342974321AFF1000050F94A /* AnimationBallScaleRippleMultiple.swift in Sources */,
+				13854B6021AFF97D00897DC8 /* ActivityIndicatorFactory.swift in Sources */,
 				1342972421AFECEF0050F94A /* AppDelegate.swift in Sources */,
-				1342974021AFF1000050F94A /* CustomAnimation.swift in Sources */,
+				13854B6221AFF9C700897DC8 /* TimingFunctionType.swift in Sources */,
+				13854B5E21AFF95700897DC8 /* ActivityIndicatorAnimatable.swift in Sources */,
+				1342974021AFF1000050F94A /* ActivityIndicatorShape.swift in Sources */,
 				1342974121AFF1000050F94A /* AnimationEnum.swift in Sources */,
+				13854B5C21AFF93500897DC8 /* ActivityIndicatorType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
