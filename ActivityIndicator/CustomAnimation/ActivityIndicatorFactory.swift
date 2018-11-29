@@ -8,11 +8,11 @@
 
 import Foundation
 
-
 public struct ActivityIndicatorFactory {
-    public static func makeActivityIndicator(activityIndicatorType: ActivityIndicatorType) -> ActivityIndicatorAnimating {
+    public static func makeActivityIndicator(type activityIndicatorType: ActivityIndicatorType) -> ActivityIndicatorAnimating {
         switch activityIndicatorType {
         case .none:
+            debugPrint("Activity Indicator Type NOT SET")
             return NoneAnimation()
         case .ballScallRippleMultiple:
             return AnimationBallScaleRippleMultiple()

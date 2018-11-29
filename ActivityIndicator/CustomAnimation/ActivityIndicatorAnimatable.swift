@@ -42,15 +42,10 @@ public extension ActivityIndicatorAnimatable where Self: UIView {
 private extension ActivityIndicatorAnimatable where Self: UIView {
     
     func configureLayer() {
-        guard layer.sublayers == nil else {
-            return
-        }
+        guard layer.sublayers == nil else { return }
+        if case .none = animationType { return }
         
-        if case .none = animationType {
-            return
-        }
-        
-        let activityIndicator = ActivityIndicatorFactory.makeActivityIndicator(activityIndicatorType: animationType)
+        let activityIndicator = ActivityIndicatorFactory.makeActivityIndicator(type: animationType)
         activityIndicator.configureAnimation(in: layer, size: bounds.size, color: color)
         layer.speed = 1
     }
